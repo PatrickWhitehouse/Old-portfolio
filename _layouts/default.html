@@ -1,42 +1,22 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <title>{{ page.title }}</title>
-        <meta name="viewport" content="width=device-width">
-
-        <!-- Custom CSS -->
-        <link rel="stylesheet" href="/css/main.css">
-
-    </head>
-    <body>
-
-        <div class="site">
-          <div class="header">
-            <h1 class="title"><a href="/">{{ site.name }}</a></h1>
-            <a class="extra" href="/">home</a>
-          </div>
-
-          {{ content }}
-
-
-          <div class="footer">
-            <div class="contact">
-              <p>
-                Your Name is<br />
-                What You Are<br />
-                you@example.com
-              </p>
-            </div>
-            <div class="contact">
-              <p>
-                <a href="https://github.com/yourusername">github.com/yourusername</a><br />
-                <a href="https://twitter.com/yourusername">twitter.com/yourusername</a><br />
-              </p>
-            </div>
-          </div>
-        </div>
-
-    </body>
+  <head>
+    <meta charset="utf-8">
+    <meta name="description" content="Patrick Whitehouse is a front end developer based in Tameside, Manchester. ">
+    <meta name="author" content="Patrick Whitehouse">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Patrick Whitehouse - Front end developer based in Tameside, Manchester</title>
+    <link href="https://fonts.googleapis.com/css?family=Inconsolata|Poppins:600" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet" type="text/css">
+    <!--[if lt IE 9]>
+      <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+  </head>
+  <body class="bg-washed-green dark-grey">
+    <div class="wrapper">
+      {% include nav.html %}
+      {{content}}
+    </div>
+  </body>
 </html>
