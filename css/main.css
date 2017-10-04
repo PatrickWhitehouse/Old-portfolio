@@ -5866,3 +5866,24 @@ body {
 
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Poppins', sans-serif; }
+
+a.common-button {
+  display: inline-block;
+  height: 40px;
+  line-height: 40px;
+  width: auto;
+  padding: 0 14px;
+  border: 1px solid #a463f2;
+  will-change: transform;
+  text-decoration: none;
+  transition: all ease .15s;
+  color: #a463f2;
+  box-shadow: 0 4px 6px rgba(50, 50, 93, 0.11); }
+  a.common-button:hover {
+    -webkit-transform: translateY(-1px);
+            transform: translateY(-1px);
+    box-shadow: 0 8px 10px rgba(50, 50, 93, 0.11);
+    color: #964bf0; }
+
+.work__item img {
+  box-shadow: 0 4px 6px rgba(50, 50, 93, 0.11); }

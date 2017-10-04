@@ -3,7 +3,7 @@ layout: default
 ---
 <section class="intro mb4">
   <h1>Patrick Whitehouse</h1>
-  <p>Hello there 👋! I'm <a href="#" class="hover-light-purple">Patrick Whitehouse</a>, a front end developer based in Tameside, Manchester 🇬🇧</p>
+  <p class="lh-copy">Hello there 👋! I'm <a href="#" class="hover-light-purple">Patrick Whitehouse</a>, a front end developer based in Tameside, Manchester 🇬🇧</p>
   <h2>Bio</h2>
   <p class="lh-copy">I have always been interesed in how computers work and function from being 👶. I have grown up watching my 👴 build computers, repair networks and study for Cisco exams. He's my inspiration in life and is the reason why I always put 💯 effort into everything I do.</p>
   <p class="lh-copy">I've recently 🎓 from Manchester Metropolitan University with a First Class Honours in Web Development 🎉!  </p>
@@ -14,7 +14,7 @@ layout: default
   <div class="work__wrapper">
     <ul class="list pa0 cf">
     {% for project in site.data.work %}
-    <li class="work__item tc dib w-third fl">
+    <li class="work__item tc dib w-third-ns w-100 mh2-ns fl">
       <img src="{{project.img}}" alt="">
       <h3>{{project.title}}</h3>
       <p class="lh-copy">{{project.desc}}</p>
@@ -31,8 +31,8 @@ layout: default
     <li class="blog__post mb2">
       <h3 class="mb0">{{post.title}}</h3>
       <small class="light-purple">{{post.date | date_to_string}}</small>
-      <p class="lh-body">{{post.excerpt}}</p>
-      <a href="{{post.url}}" class="hover-light-purple">Read full post</a>
+      <p class="lh-copy">{{post.excerpt}}</p>
+      <a href="{{post.url}}" class="common-button">Read {{post.title}}</a>
     </li>
     {% endfor %}
   </ul>
