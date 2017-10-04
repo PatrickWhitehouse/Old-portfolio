@@ -13,10 +13,15 @@
     <![endif]-->
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
   </head>
-  <body class="bg-washed-green dark-grey pa4 pa0-l">
+  <body class="bg-washed-green dark-grey pa4 pa0-l fade-out">
     <div class="mw7 center">
       {% include nav.html %}
       {{content}}
     </div>
+    <script type="text/javascript">
+    setTimeout(function(){
+      document.body.className = document.body.className.replace("fade-out","");
+    }, 100);
+    </script>
   </body>
 </html>
