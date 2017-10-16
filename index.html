@@ -16,7 +16,7 @@ layout: default
     <ul class="list pa0 cf">
     {% for project in site.data.work %}
     <li class="work__item tc dib w-50-ns w-100 mb5 mb0-ns pa2 fl">
-      <img src="{{project.img}}" alt="">
+      <img src="{{'images/aspect-ratio.png'  | absolute_url }}" style="background-image:url('{{project.img}}'); width: 100%; background-size: cover; background-position:center;" alt="">
       <h3>{{project.title}}</h3>
       <p class="lh-copy">{{project.desc}}</p>
       <a href="{{project.url}}" class="common-button" target="_blank">View live site</a>
@@ -38,7 +38,7 @@ layout: default
       <a href="{{post.url}}" class="common-button">Read {{post.title}}</a>
     </li>
     {% endfor %}
-    <p class="lh-copy">Sorry, there is currently no blog posts.</p>
+    <p class="lh-copy">Sorry, there are currently no blog posts 🙁. Don't worry, I'm in the process of ✍️ some good content.</p>
     {% else %}
     {% endif %}
   </ul>
