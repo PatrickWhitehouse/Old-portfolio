@@ -34,7 +34,6 @@ a.common-button{
   transition: all ease .15s;
   color: #a463f2;
   position: relative;
-  overflow: hidden;
   @include defaultShadow;
 
   &:before{
@@ -46,7 +45,8 @@ a.common-button{
     bottom:0;
     background-image: linear-gradient(90deg, #a463f2, darken(#a463f2, 5%));
     z-index: -1;
-    transform: translateX(-100%);
+    transform: scaleX(0);
+    transform-origin: left center;
     transition: ease all .3s;
   }
 
@@ -56,7 +56,7 @@ a.common-button{
     color: #eee;
 
     &:before{
-      transform: translateX(0);
+      transform: scaleX(1);
       transition: ease all .3s;
     }
   }

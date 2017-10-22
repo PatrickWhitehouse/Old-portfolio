@@ -5884,7 +5884,6 @@ a.common-button {
   transition: all ease .15s;
   color: #a463f2;
   position: relative;
-  overflow: hidden;
   box-shadow: 0 4px 6px rgba(50, 50, 93, 0.11); }
   a.common-button:before {
     content: "";
@@ -5895,8 +5894,10 @@ a.common-button {
     bottom: 0;
     background-image: linear-gradient(90deg, #a463f2, #964bf0);
     z-index: -1;
-    -webkit-transform: translateX(-100%);
-            transform: translateX(-100%);
+    -webkit-transform: scaleX(0);
+            transform: scaleX(0);
+    -webkit-transform-origin: left center;
+            transform-origin: left center;
     transition: ease all .3s; }
   a.common-button:hover {
     -webkit-transform: translateY(-1px);
@@ -5904,8 +5905,8 @@ a.common-button {
     box-shadow: 0 8px 10px rgba(50, 50, 93, 0.11);
     color: #eee; }
     a.common-button:hover:before {
-      -webkit-transform: translateX(0);
-              transform: translateX(0);
+      -webkit-transform: scaleX(1);
+              transform: scaleX(1);
       transition: ease all .3s; }
 
 .work__item img {
