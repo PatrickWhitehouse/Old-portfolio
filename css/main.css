@@ -5883,12 +5883,30 @@ a.common-button {
   text-decoration: none;
   transition: all ease .15s;
   color: #a463f2;
+  position: relative;
+  overflow: hidden;
   box-shadow: 0 4px 6px rgba(50, 50, 93, 0.11); }
+  a.common-button:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: linear-gradient(90deg, #a463f2, #964bf0);
+    z-index: -1;
+    -webkit-transform: translateX(-100%);
+            transform: translateX(-100%);
+    transition: ease all .3s; }
   a.common-button:hover {
     -webkit-transform: translateY(-1px);
             transform: translateY(-1px);
     box-shadow: 0 8px 10px rgba(50, 50, 93, 0.11);
-    color: #964bf0; }
+    color: #eee; }
+    a.common-button:hover:before {
+      -webkit-transform: translateX(0);
+              transform: translateX(0);
+      transition: ease all .3s; }
 
 .work__item img {
   box-shadow: 0 4px 6px rgba(50, 50, 93, 0.11); }

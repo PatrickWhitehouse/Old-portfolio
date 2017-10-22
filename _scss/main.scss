@@ -33,12 +33,32 @@ a.common-button{
   text-decoration: none;
   transition: all ease .15s;
   color: #a463f2;
+  position: relative;
+  overflow: hidden;
   @include defaultShadow;
+
+  &:before{
+    content:"";
+    position: absolute;
+    top: 0;
+    left:0;
+    right:0;
+    bottom:0;
+    background-image: linear-gradient(90deg, #a463f2, darken(#a463f2, 5%));
+    z-index: -1;
+    transform: translateX(-100%);
+    transition: ease all .3s;
+  }
 
   &:hover{
     transform: translateY(-1px);
     box-shadow: 0 8px 10px rgba(50,50,93,.11);
-    color: darken(#a463f2, 5%);
+    color: #eee;
+
+    &:before{
+      transform: translateX(0);
+      transition: ease all .3s;
+    }
   }
 }
 
