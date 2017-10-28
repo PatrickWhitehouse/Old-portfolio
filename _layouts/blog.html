@@ -3,12 +3,13 @@
 <html>
   <head>
     <meta charset="utf-8">
+    <script src="//twemoji.maxcdn.com/2/twemoji.min.js?2.3.0"></script>
     <meta name="description" content="Patrick Whitehouse is a front end developer based in Tameside, Manchester. ">
     <meta name="author" content="Patrick Whitehouse">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
     <title>Patrick Whitehouse - Front end developer based in Tameside, Manchester</title>
     <link href="https://fonts.googleapis.com/css?family=Inconsolata|Poppins:600" rel="stylesheet">
-    <link href="/css/main.css" rel="stylesheet" type="text/css">
+    <link href="/css/main.css?v=1" rel="stylesheet" type="text/css">
     <!--[if lt IE 9]>
       <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
@@ -23,6 +24,7 @@
       setTimeout(function(){
         document.body.className = document.body.className.replace("fade-out","");
       }, 100);
+      twemoji.parse(document.body);
     </script>
   </body>
 </html>
