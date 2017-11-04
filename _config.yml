@@ -1,4 +1,4 @@
-name: Patrick Whitehouse 
+name: Patrick Whitehouse
 markdown: kramdown
 highlighter: rouge
 exclude: ["node_modules", "gulpfile.js", "package.json"]

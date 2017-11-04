@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html>
   <head>
@@ -19,6 +18,24 @@
     <div class="mw7 center">
       {% include blog-nav.html %}
       {{content}}
+      <br>
+      {% if page.previous.url or page.next.url %}
+      <h2>Read more...</h2>
+        <div class="pagination cf">
+          <div class="fl">
+            {% if page.previous.url %}
+            <h3>Previous post</h3>
+            <a href="{{page.previous.url}}" class="common-button">Read {{page.previous.title}}</a>
+            {% endif %}
+          </div>
+          <div class="fr">
+            {% if page.next.url %}
+            <h3>Next post</h3>
+            <a href="{{page.next.url}}" class="common-button">Read {{page.next.title}}</a>
+            {% endif %}
+          </div>
+        </div>
+        {% endif %}
     </div>
     <script type="text/javascript">
       setTimeout(function(){
