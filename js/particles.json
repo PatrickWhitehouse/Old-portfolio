@@ -1,0 +1,27 @@
+{
+  "particles": {
+    "number": {
+      "value": 25,
+      "density": {
+        "enable": true,
+        "value_area": 2500
+      }
+    },
+    "color": {
+      "value": ["#a463f2", "#964bf0"]
+    },
+    "size":{
+      "value": 3
+    },
+    "opacity":{
+      "value": 1,
+      "random": true
+    },
+    "line_linked": {
+      "enable": false
+    },
+    "shape": {
+      "type": "circle"
+    }
+  }
+}

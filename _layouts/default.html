@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <script src="//twemoji.maxcdn.com/2/twemoji.min.js?2.3.0"></script>
     <meta charset="utf-8">
     <meta name="description" content="Patrick Whitehouse is a front end developer based in Tameside, Manchester. ">
     <meta name="author" content="Patrick Whitehouse">
@@ -31,15 +30,21 @@
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
   </head>
   <body class="bg-washed-green dark-grey pa4 pa0-l fade-out">
+    <div id="particles-js"></div>
     <div class="mw7 center">
       {% include nav.html %}
       {{content}}
     </div>
+    <script src="//twemoji.maxcdn.com/2/twemoji.min.js?2.3.0"></script>
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js" charset="utf-8"></script>
     <script type="text/javascript">
     setTimeout(function(){
       document.body.className = document.body.className.replace("fade-out","");
     }, 100);
     twemoji.parse(document.body);
+    particlesJS.load('particles-js', '../js/particles.json', function() {
+    console.log('callback - particles.js config loaded');
+    });
     </script>
   </body>
 </html>

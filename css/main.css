@@ -5915,3 +5915,12 @@ a.common-button {
 img.emoji {
   width: 16px;
   height: 16px; }
+
+#particles-js {
+  display: block;
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  z-index: -10; }
