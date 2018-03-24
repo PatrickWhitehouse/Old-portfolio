@@ -1,0 +1,22 @@
+/* Colours */
+$primary:#dbfbd2;
+$secondary: #89518b;
+$dark: #333;
+$light: #EEE;
+
+/* Spacer */
+
+$spacer1: 10px;
+$spacer2: 20px;
+$spacer3: 30px;
+
+/* Screen sizes */
+
+$tablet: 768px;
+$mobile: 480px;
+
+@mixin respond($media){
+    @media(min-width: #{$media}){
+        @content;
+    }
+}
