@@ -29,6 +29,11 @@ h3{
     font-size: 1.2rem;
 }
 
+small{
+    font-size: .75rem;
+    text-transform: uppercase;
+}
+
 a,a:link, a:visited, a:active{
     color: $dark;
     text-decoration: none;
@@ -75,6 +80,21 @@ section.hero{
             display: table;
             clear: both;
             content:"";
+        }
+
+        .work--desc{
+            small{
+                display: inline-block;
+                color: $primary;
+                background-color: $secondary;
+                padding: 5px;
+                border-radius: 5px;
+            }
+            *{
+                @include respond($tablet){
+                    margin-bottom: $spacer1;
+                }
+            }
         }
     }
 }

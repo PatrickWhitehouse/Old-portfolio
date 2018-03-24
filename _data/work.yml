@@ -1,0 +1,9 @@
+- name: Maid About Town
+  type: Full build
+  desc: Lorem
+  img: https://placehold.it/350x200
+
+- name: AD Supplies
+  type: Full build
+  desc: Lorem
+  img: https://placehold.it/350x200

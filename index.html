@@ -17,29 +17,17 @@ title: Patrick Whitehouse - Front end developer based in Tameside
   <h3>Work</h3>
   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis deleniti id sit mollitia nesciunt odit veniam sint minima sequi nulla repellendus dolor nobis ut laboriosam, impedit, est, itaque officia aliquid.</p>
   <div class="work--grid">
-    <div class="work--item">
-      <div class="work--image">
-          <img src="https://placehold.it/350x200" alt="">
-      </div>
-      <div class="work--desc">
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Neque soluta voluptatem placeat, possimus, tempore officia deleniti laudantium rerum architecto est sint magnam sunt distinctio sequi dolor, nobis molestiae dolorum consequatur?</p>
-      </div>
-    </div>
+    {% for work in site.data.work %}
     <div class="work--item">
         <div class="work--image">
-            <img src="https://placehold.it/350x200" alt="">
+            <img src="{{work.img}}" alt="">
         </div>
         <div class="work--desc">
-          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Neque soluta voluptatem placeat, possimus, tempore officia deleniti laudantium rerum architecto est sint magnam sunt distinctio sequi dolor, nobis molestiae dolorum consequatur?</p>
+          <h4>{{work.name}}</h4>
+          <small>{{work.type}}</small>
+          <p>{{work.desc}}</p>
         </div>
       </div>
-      <div class="work--item">
-          <div class="work--image">
-              <img src="https://placehold.it/350x200" alt="">
-          </div>
-          <div class="work--desc">
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Neque soluta voluptatem placeat, possimus, tempore officia deleniti laudantium rerum architecto est sint magnam sunt distinctio sequi dolor, nobis molestiae dolorum consequatur?</p>
-          </div>
-        </div>
+    {%endfor%}
   </div>
 </section>
