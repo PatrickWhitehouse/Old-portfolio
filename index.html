@@ -26,6 +26,7 @@ title: Patrick Whitehouse - Front end developer based in Tameside
           <h4>{{work.name}}</h4>
           <small>{{work.type}}</small>
           <p>{{work.desc}}</p>
+          {% if work.url %}<a class="work--url" href="{{work.url}}" title="{{work.name}} site" target="_blank">View the outcome</a>{%endif%}
         </div>
       </div>
     {%endfor%}

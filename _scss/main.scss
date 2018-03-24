@@ -93,6 +93,19 @@ section.hero{
             *{
                     margin-bottom: $spacer1;
             }
+
+            a.work--url{
+                display: inline-block;
+                position: relative;
+
+                &:after{
+                    display: block;
+                    content: "→";
+                    right: -20px;
+                    position: absolute;
+                    top: 0;
+                }
+            }
         }
     }
 }
