@@ -3,8 +3,10 @@
 
 /* General styles */
 
-html{
+*{
     box-sizing: border-box;
+}
+html{
     font-size: 16px;
 }
 
@@ -27,11 +29,21 @@ h3{
     font-size: 1.2rem;
 }
 
+a,a:link, a:visited, a:active{
+    color: $dark;
+    text-decoration: none;
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
 main{
     padding: $spacer3;
 
-    @include respond($mobile){
-        padding:$spacer2;
+    @include respond($tablet){
+        max-width: 80%;
+        margin: 0 auto;
     }
 }
 section{
@@ -44,5 +56,25 @@ section{
 /* Custom styles */
 
 section.hero{
-    text-align: center;
+    text-align: center;   
+}
+
+/* Work section */
+.work--grid{
+    margin-top: $spacer3;
+
+    .work--item{
+        margin-bottom: $spacer2;
+        .work--image, .work--desc{
+            @include respond($tablet){
+                width: 50%;
+                float: left;
+            }
+        }
+        &:after{
+            display: table;
+            clear: both;
+            content:"";
+        }
+    }
 }
