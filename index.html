@@ -15,7 +15,11 @@ title: Patrick Whitehouse - Front end developer based in Tameside
 </section>
 <section class="work">
   <h3>Work</h3>
-  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis deleniti id sit mollitia nesciunt odit veniam sint minima sequi nulla repellendus dolor nobis ut laboriosam, impedit, est, itaque officia aliquid.</p>
+  <p>Take a look at my latest projects.
+      {% if site.hire-me %}
+      <span style="color: green;">I'm on the lookout for more projects. <a href="https://twitter.com/patrickdoesweb">Tweet me!</a></span>
+      {% endif %}
+  </p>
   <div class="work--grid">
     {% for work in site.data.work %}
     <div class="work--item">
