@@ -121,6 +121,5 @@ section.hero {
       background-color: #89518b;
       padding: 5px;
       border-radius: 5px; }
-    @media (min-width: 768px) {
-      .work--grid .work--item .work--desc * {
-        margin-bottom: 10px; } }
+    .work--grid .work--item .work--desc * {
+      margin-bottom: 10px; }

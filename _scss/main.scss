@@ -91,9 +91,7 @@ section.hero{
                 border-radius: 5px;
             }
             *{
-                @include respond($tablet){
                     margin-bottom: $spacer1;
-                }
             }
         }
     }
