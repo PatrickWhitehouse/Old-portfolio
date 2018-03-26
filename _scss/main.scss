@@ -29,6 +29,10 @@ h3{
     font-size: 1.2rem;
 }
 
+p{
+    margin-bottom: $spacer1;
+}
+
 small{
     font-size: .75rem;
     text-transform: uppercase;
@@ -74,6 +78,7 @@ section.hero{
             @include respond($tablet){
                 width: 50%;
                 float: left;
+                padding: $spacer1;
             }
         }
         &:after{
