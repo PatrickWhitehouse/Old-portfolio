@@ -9,8 +9,11 @@ title: Patrick Whitehouse - Front end developer based in Tameside
 </section>
 <section class="about">
   <h3>About</h3>
-  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi velit molestiae commodi tempora exercitationem fugiat esse reprehenderit consectetur veritatis veniam et odit ipsam eius rem, quam voluptatibus eos quas dolorem.
+  <p>
+      Hello there! I'm Patrick Whitehouse, a front end developer based in Tameside, Manchester.
   </p>
+    <p> I've recently graduated from Manchester Metropolitan University with a First Class Honours in Web Development!  I now work as a front end developer for <a href="https://pushon.co.uk">PushON</a>, who are located just outside Manchester city centre.
+    </p>
 </section>
 <section class="work">
   <h3>Work</h3>
@@ -23,7 +26,7 @@ title: Patrick Whitehouse - Front end developer based in Tameside
     {% for work in site.data.work %}
     <div class="work--item">
         <div class="work--image">
-            <img src="{{work.img}}" alt="">
+            <img src="{{work.img}}" alt="Screenshot of outcome - {{work.name}}">
         </div>
         <div class="work--desc">
           <h4>{{work.name}}</h4>
