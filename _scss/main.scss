@@ -27,6 +27,9 @@ h2{
 h3{
     font-size: 1.2rem;
 }
+h4{
+    font-size: 1rem;
+}
 
 p{
     margin-bottom: $spacer1;
@@ -109,6 +112,27 @@ section.hero{
                     position: absolute;
                     top: 0;
                 }
+            }
+        }
+    }
+}
+
+/* Blog section */
+
+section.blog{
+    ul{
+        @include respond($tablet){
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;   
+        }
+        li{
+            margin-bottom: $spacer1;
+            @include respond($tablet){
+                border: 1px solid $secondary;
+                flex-basis: 49%; 
+                text-align: center;
+                padding: $spacer1;
             }
         }
     }

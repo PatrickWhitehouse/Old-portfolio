@@ -38,3 +38,17 @@ title: Patrick Whitehouse - Front end developer based in Tameside
     {%endfor%}
   </div>
 </section>
+<section class="blog">
+  <h3>Blog posts</h3>
+  <p>Have a read through my latest blog posts.</p>
+  <ul>
+      {% for post in site.posts %}
+      <li>
+        <h4>{{post.title}}</h4>
+        <small>{{post.date | date_to_string}}</small>
+        <p>{{post.excerpt}}</p>
+        <a href="{{post.url}}">Read the post</a>
+      </li>
+      {% endfor %}
+  </ul>
+</section>
