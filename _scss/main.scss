@@ -133,6 +133,10 @@ section.blog{
                 flex-basis: 49%; 
                 text-align: center;
                 padding: $spacer1;
+
+                &:nth-child(even){
+                    border: 1px solid $primary;
+                }
             }
         }
     }

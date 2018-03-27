@@ -45,7 +45,7 @@ title: Patrick Whitehouse - Front end developer based in Tameside
       {% for post in site.posts %}
       <li>
         <h4>{{post.title}}</h4>
-        <small>{{post.date | date_to_string}}</small>
+        <small>{{post.date | date: '%d %B'}}</small>
         <p>{{post.excerpt}}</p>
         <a href="{{post.url}}">Read the post</a>
       </li>
