@@ -129,3 +129,17 @@ section.blog ul li {
           flex-basis: 49%;
       text-align: center;
       padding: 20px 10px; } }
+
+/* Blog post */
+section.blog--post {
+  background-color: #a6e9dc;
+  min-height: 45vh;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center;
+  text-align: center;
+  -ms-flex-direction: column;
+      flex-direction: column; }
