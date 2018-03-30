@@ -1,23 +1,21 @@
 /* Colours */
+
 $secondary: #2d18bc;
 $lighter-secondary: lighten($secondary, 10%);
 $primary:#a6e9dc;
 $dark: #333;
 $light: #F8F8F8;
-
 /* Spacer */
 
 $spacer1: 10px;
 $spacer2: 20px;
 $spacer3: 30px;
-
 /* Screen sizes */
 
 $tablet: 768px;
 $mobile: 480px;
-
-@mixin respond($media){
-    @media(min-width: #{$media}){
+@mixin respond($media) {
+    @media(min-width: #{$media}) {
         @content;
     }
 }

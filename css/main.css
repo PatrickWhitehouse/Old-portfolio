@@ -37,7 +37,10 @@ small {
   font-size: .75rem;
   text-transform: uppercase; }
 
-a, a:link, a:visited, a:active {
+a,
+a:link,
+a:visited,
+a:active {
   color: #333;
   text-decoration: none; }
 
@@ -60,7 +63,7 @@ a.btn {
   background: linear-gradient(to right, #2d18bc, #3c24e3);
   display: inline-block;
   color: #a6e9dc;
-  padding: 5px;
+  padding: 5px 10px;
   border-radius: 5px;
   position: relative; }
   a.btn::after {
@@ -90,7 +93,8 @@ section.hero {
   .work--grid .work--item {
     margin-bottom: 20px; }
     @media (min-width: 768px) {
-      .work--grid .work--item .work--image, .work--grid .work--item .work--desc {
+      .work--grid .work--item .work--image,
+      .work--grid .work--item .work--desc {
         width: 50%;
         float: left;
         padding: 10px; } }
@@ -148,6 +152,6 @@ section.blog ul li {
       -ms-flex-preferred-size: 49%;
           flex-basis: 49%;
       text-align: center;
-      padding: 10px; }
+      padding: 20px 10px; }
       section.blog ul li:nth-child(even) {
         border: 1px solid #a6e9dc; } }

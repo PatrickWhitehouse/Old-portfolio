@@ -1,92 +1,99 @@
 @import "variables";
-
 /* General styles */
 
-*{
+* {
     box-sizing: border-box;
 }
-html{
+
+html {
     font-size: 16px;
 }
 
-body{
+body {
     line-height: 1.6;
     color: $secondary;
     background-color: $light;
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 }
-img{
+
+img {
     max-width: 100%;
 }
-h1{
+
+h1 {
     font-size: 2rem;
 }
-h2{
+
+h2 {
     font-size: 1.5rem;
 }
-h3{
+
+h3 {
     font-size: 1.2rem;
 }
-h4{
+
+h4 {
     font-size: 1rem;
 }
 
-p{
+p {
     margin-bottom: $spacer1;
 }
 
-small{
+small {
     font-size: .75rem;
     text-transform: uppercase;
 }
 
-a,a:link, a:visited, a:active{
+a,
+a:link,
+a:visited,
+a:active {
     color: $dark;
     text-decoration: none;
 }
 
-a:hover{
+a:hover {
     text-decoration: underline;
 }
 
-main{
+main {
     padding: $spacer3;
-
-    @include respond($tablet){
+    @include respond($tablet) {
         max-width: 80%;
         margin: 0 auto;
     }
 }
-section{
+
+section {
     margin-bottom: $spacer2;
-    &:last-of-type{
+    &:last-of-type {
         margin-bottom: $spacer1;
     }
 }
 
-a.btn{
+a.btn {
     background: linear-gradient(to right, $secondary, $lighter-secondary);
     display: inline-block;
     color: $primary;
-    padding: $spacer1/2;
+    padding: $spacer1/2 $spacer1;
     border-radius: 5px;
     position: relative;
-
-    &::after{
+    &::after {
         content: "";
-                    position: absolute;
-                    z-index: -1;
-                    height: 110%;
-                    width: 90%;
-                    opacity: 0.8;
-                    background: inherit;
-                    left: 5%;
-                    bottom: -5px;
-                    filter: blur(5px);
-                    transition: ease-in-out all .2s;
+        position: absolute;
+        z-index: -1;
+        height: 110%;
+        width: 90%;
+        opacity: 0.8;
+        background: inherit;
+        left: 5%;
+        bottom: -5px;
+        filter: blur(5px);
+        transition: ease-in-out all .2s;
     }
-    &:hover{
-        &::after{
+    &:hover {
+        &::after {
             bottom: -2px;
             transition: ease-in-out all .2s;
         }
@@ -95,41 +102,39 @@ a.btn{
 
 /* Custom styles */
 
-section.hero{
-    text-align: center;   
+section.hero {
+    text-align: center;
 }
 
 /* Work section */
-.work--grid{
-    margin-top: $spacer3;
 
-    .work--item{
+.work--grid {
+    margin-top: $spacer3;
+    .work--item {
         margin-bottom: $spacer2;
-        .work--image, .work--desc{
-            @include respond($tablet){
+        .work--image,
+        .work--desc {
+            @include respond($tablet) {
                 width: 50%;
                 float: left;
                 padding: $spacer1;
             }
         }
-        &:after{
+        &:after {
             display: table;
             clear: both;
-            content:"";
+            content: "";
         }
-
-        .work--desc{
-            small{
+        .work--desc {
+            small {
                 display: inline-block;
                 color: $primary;
                 background: linear-gradient(45deg, $secondary, $lighter-secondary);
                 padding: 5px;
                 border-radius: 5px;
                 position: relative;
-
                 /* Gradient shadow */
-
-                &::after{
+                &::after {
                     content: "";
                     position: absolute;
                     z-index: -1;
@@ -142,15 +147,13 @@ section.hero{
                     filter: blur(5px);
                 }
             }
-            *{
-                    margin-bottom: $spacer1;
+            * {
+                margin-bottom: $spacer1;
             }
-
-            a.work--url{
+            a.work--url {
                 display: inline-block;
                 position: relative;
-
-                &:after{
+                &:after {
                     display: block;
                     content: "→";
                     right: -20px;
@@ -164,22 +167,21 @@ section.hero{
 
 /* Blog section */
 
-section.blog{
-    ul{
-        @include respond($tablet){
+section.blog {
+    ul {
+        @include respond($tablet) {
             display: flex;
             flex-wrap: wrap;
-            justify-content: space-between;   
+            justify-content: space-between;
         }
-        li{
+        li {
             margin-bottom: $spacer1;
-            @include respond($tablet){
+            @include respond($tablet) {
                 border: 1px solid $secondary;
-                flex-basis: 49%; 
+                flex-basis: 49%;
                 text-align: center;
-                padding: $spacer1;
-
-                &:nth-child(even){
+                padding: $spacer2 $spacer1;
+                &:nth-child(even) {
                     border: 1px solid $primary;
                 }
             }
