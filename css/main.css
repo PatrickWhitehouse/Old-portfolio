@@ -56,6 +56,30 @@ section {
   section:last-of-type {
     margin-bottom: 10px; }
 
+a.btn {
+  background: linear-gradient(to right, #2d18bc, #3c24e3);
+  display: inline-block;
+  color: #a6e9dc;
+  padding: 5px;
+  border-radius: 5px;
+  position: relative; }
+  a.btn::after {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    height: 110%;
+    width: 90%;
+    opacity: 0.8;
+    background: inherit;
+    left: 5%;
+    bottom: -5px;
+    -webkit-filter: blur(5px);
+            filter: blur(5px);
+    transition: ease-in-out all .2s; }
+  a.btn:hover::after {
+    bottom: -2px;
+    transition: ease-in-out all .2s; }
+
 /* Custom styles */
 section.hero {
   text-align: center; }
@@ -77,9 +101,23 @@ section.hero {
     .work--grid .work--item .work--desc small {
       display: inline-block;
       color: #a6e9dc;
-      background-color: #2d18bc;
+      background: linear-gradient(45deg, #2d18bc, #3c24e3);
       padding: 5px;
-      border-radius: 5px; }
+      border-radius: 5px;
+      position: relative;
+      /* Gradient shadow */ }
+      .work--grid .work--item .work--desc small::after {
+        content: "";
+        position: absolute;
+        z-index: -1;
+        height: 110%;
+        width: 90%;
+        opacity: 0.8;
+        background: inherit;
+        left: 5%;
+        bottom: -5px;
+        -webkit-filter: blur(5px);
+                filter: blur(5px); }
     .work--grid .work--item .work--desc * {
       margin-bottom: 10px; }
     .work--grid .work--item .work--desc a.work--url {
