@@ -133,7 +133,7 @@ section.blog ul li {
 /* Blog post */
 section.blog--post {
   background-color: #a6e9dc;
-  min-height: 45vh;
+  height: 500px;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: center;
