@@ -129,38 +129,14 @@ section.hero {
             small {
                 display: inline-block;
                 color: $primary;
-                background: linear-gradient(45deg, $secondary, $lighter-secondary);
+                background-color: $dark;
                 padding: 5px;
                 border-radius: 5px;
-                position: relative;
-                /* Gradient shadow */
-                &::after {
-                    content: "";
-                    position: absolute;
-                    z-index: -1;
-                    height: 110%;
-                    width: 90%;
-                    opacity: 0.8;
-                    background: inherit;
-                    left: 5%;
-                    bottom: -5px;
-                    filter: blur(5px);
-                }
             }
             * {
                 margin-bottom: $spacer1;
             }
-            a.work--url {
-                display: inline-block;
-                position: relative;
-                &:after {
-                    display: block;
-                    content: "→";
-                    right: -20px;
-                    position: absolute;
-                    top: 0;
-                }
-            }
+
         }
     }
 }
@@ -181,9 +157,6 @@ section.blog {
                 flex-basis: 49%;
                 text-align: center;
                 padding: $spacer2 $spacer1;
-                &:nth-child(even) {
-                    border: 1px solid $primary;
-                }
             }
         }
     }
