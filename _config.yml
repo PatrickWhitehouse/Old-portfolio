@@ -1,5 +1,7 @@
 name: Patrick Whitehouse
 markdown: kramdown
+kramdown:
+  auto_ids: false
 highlighter: rouge
 exclude: ["node_modules", "gulpfile.js", "package.json"]
 url: //patrickwhitehouse.github.io

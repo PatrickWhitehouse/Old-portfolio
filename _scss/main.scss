@@ -172,3 +172,11 @@ section.blog--post {
     text-align: center;
     flex-direction: column;
 }
+
+/* Footer */
+footer{
+    background-color: $primary;
+    padding: $spacer2;
+    text-align: center;
+    margin-top: $spacer2;
+}
