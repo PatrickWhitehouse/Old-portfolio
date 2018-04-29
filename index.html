@@ -53,3 +53,21 @@ description: The portfolio of Tameside based front end developer, Patrick Whiteh
       {% endfor %}
   </ul>
 </section>
+<section class="instagram">
+  <h3>Instagram feed</h3>
+  <div id="instafeed">
+
+  </div>
+  <script type="text/javascript">
+    var feed = new Instafeed({
+        get: 'user',
+        userId: '399317996',
+        limit: '5',
+        sortBy: 'most-recent',
+        resolution: 'thumbnail',
+        accessToken: '399317996.e33646a.41b1aa38071b4e36a7596b0715aed127' ,
+        clientId: 'e33646a690f343518c566e61b7124f1f'
+    });
+    feed.run();
+</script>
+</section>

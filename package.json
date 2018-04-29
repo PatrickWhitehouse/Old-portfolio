@@ -29,6 +29,7 @@
   },
   "homepage": "https://github.com/shakyShane/jekyll-gulp-sass-browser-sync",
   "dependencies": {
+    "instafeed.js": "^1.4.1",
     "particles.js": "^2.0.0"
   }
 }
