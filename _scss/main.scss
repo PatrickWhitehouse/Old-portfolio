@@ -173,6 +173,17 @@ section.blog--post {
     flex-direction: column;
 }
 
+/* Instagram section */
+
+section.instagram{
+    #instafeed{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+}
+
 /* Footer */
 footer{
     background-color: $primary;
