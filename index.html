@@ -41,6 +41,10 @@ description: The portfolio of Tameside based front end developer, Patrick Whiteh
 </section>
 <section class="blog">
   <h3>Blog posts</h3>
+  {% assign psize = site.posts | size %}
+  {% if psize == 0 %} 
+  <p>There are currently 0 blog posts. Check back soon as I'm in the process of writing some.</p>
+  {% else %}
   <p>Have a read through my latest blog posts.</p>
   <ul>
       {% for post in site.posts %}
@@ -52,6 +56,7 @@ description: The portfolio of Tameside based front end developer, Patrick Whiteh
       </li>
       {% endfor %}
   </ul>
+  {% endif %}
 </section>
 <section class="instagram">
   <h3>Instagram feed</h3>
