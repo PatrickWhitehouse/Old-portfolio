@@ -6,4 +6,4 @@ highlighter: rouge
 exclude: ["node_modules", "gulpfile.js", "package.json"]
 url: //patrickwhitehouse.github.io
 permalink: /blog/:title:output_ext
-hire-me: false
+hire-me: true
