@@ -3,12 +3,40 @@
 body{
     font-family: $font-sans;
     font-size: $font-base;
-    line-height: 1.5;
+    line-height: 2;
 }
 
 h1{
     font-size: $font-xl;
 }
-h2{
+h2,h3{
     font-size: $font-l;
+    color: $purple;
+}
+
+h3{
+    display: inline-block;
+}
+
+h3::after{
+    display: block;
+    height: 2px;
+    background-color: $orchid;
+    content:"";
+}
+
+a, a:link, a:visited, a:active{
+    color: $purple;
+    font-weight: bold;
+    text-decoration: none;
+    transition: ease all .25s;
+}
+
+a:hover{
+    color: $orchid;
+    transition: ease all .25s;
+}
+
+a:focus{
+    outline: 1px solid $purple;
 }

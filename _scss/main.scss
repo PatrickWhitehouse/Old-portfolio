@@ -1,3 +1,9 @@
 @import "variables";
 @import "typography";
 @import "home";
+
+.wrapper{
+    max-width: 960px;
+    margin: 0 auto;
+    padding: $indent__m;
+}

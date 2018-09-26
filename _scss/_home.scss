@@ -4,11 +4,44 @@
     height: 80vh;
     background: $orchid;
     color: $purple;
-    position: relative;
-    &__content{
-        position: absolute;
-        top: 50%;
-        transform: translateY(-50%);
-        left: $indent__l;
+    text-align: center;
+    display: flex;
+    align-items:center;
+    justify-content: center;
+}
+
+// Work
+
+.showcase{
+    display: flex;
+    flex-wrap: wrap;
+}
+.project{
+    width: 50%;
+    flex-grow: 0;
+    background-color: $purple;
+    color: white;
+    padding: $indent__l;
+    border-left: 5px solid $orchid;
+
+    .project__title{
+        color: $orchid;
+        font-weight: bold;
+    }
+
+    a.project__link{
+            display: block;
+            border: 1px solid white;
+            text-align: center;
+            color: white;
+            font-weight: normal;
+            margin-top: $indent__m;
+            padding: $indent__s;
+
+            &:hover{
+                background-color: $orchid;
+                color: $purple;
+                border-color: $orchid;
+            }
     }
 }

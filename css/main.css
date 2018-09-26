@@ -2,22 +2,80 @@
 body {
   font-family: "Roboto", sans-serif;
   font-size: 16px;
-  line-height: 1.5; }
+  line-height: 2; }
 
 h1 {
   font-size: 2.4rem; }
 
-h2 {
-  font-size: 1.333rem; }
+h2, h3 {
+  font-size: 1.333rem;
+  color: #0c22b4; }
+
+h3 {
+  display: inline-block; }
+
+h3::after {
+  display: block;
+  height: 2px;
+  background-color: #ffb2ea;
+  content: ""; }
+
+a, a:link, a:visited, a:active {
+  color: #0c22b4;
+  font-weight: bold;
+  text-decoration: none;
+  transition: ease all .25s; }
+
+a:hover {
+  color: #ffb2ea;
+  transition: ease all .25s; }
+
+a:focus {
+  outline: 1px solid #0c22b4; }
 
 .intro {
   height: 80vh;
   background: #ffb2ea;
   color: #0c22b4;
-  position: relative; }
-  .intro__content {
-    position: absolute;
-    top: 50%;
-    -webkit-transform: translateY(-50%);
-            transform: translateY(-50%);
-    left: 15px; }
+  text-align: center;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+      align-items: center;
+  -ms-flex-pack: center;
+      justify-content: center; }
+
+.showcase {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }
+
+.project {
+  width: 50%;
+  -ms-flex-positive: 0;
+      flex-grow: 0;
+  background-color: #0c22b4;
+  color: white;
+  padding: 15px;
+  border-left: 5px solid #ffb2ea; }
+  .project .project__title {
+    color: #ffb2ea;
+    font-weight: bold; }
+  .project a.project__link {
+    display: block;
+    border: 1px solid white;
+    text-align: center;
+    color: white;
+    font-weight: normal;
+    margin-top: 10px;
+    padding: 5px; }
+    .project a.project__link:hover {
+      background-color: #ffb2ea;
+      color: #0c22b4;
+      border-color: #ffb2ea; }
+
+.wrapper {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 10px; }
