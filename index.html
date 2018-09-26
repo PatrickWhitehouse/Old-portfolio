@@ -3,79 +3,9 @@ layout: default
 title: Patrick Whitehouse - Front end developer based in Tameside
 description: The portfolio of Tameside based front end developer, Patrick Whitehouse. Explore his work and have a read of his blog posts.
 ---
-<section class="hero">
-  <img src="/images/me-and-beth.jpg" alt="Patrick and his girlfriend Beth" class="portrait">
-  <h1>{{site.name}}</h1>
-  <h2>Front end developer based in Tameside, Manchester</h2>
-</section>
-<section class="about">
-  <h3>About</h3>
-  <p>
-      Hello there! I'm Patrick Whitehouse, a front end developer based in Tameside, Manchester.
-  </p>
-    <p> I've recently graduated from Manchester Metropolitan University with a First Class Honours in Web Development!  I now work as a front end developer for <a href="https://pushon.co.uk">PushON</a>, who are located just outside Manchester city centre.
-    </p>
-</section>
-<section class="work">
-  <h3>Work</h3>
-  <p>Take a look at my latest projects.
-      {% if site.hire-me %}
-      <br>
-      <span style="color: green;"><strong>I'm on the lookout for more projects.</strong> <a href="https://twitter.com/patrickdoesweb">Tweet me your project idea!</a></span>
-      {% endif %}
-  </p>
-  <div class="work--grid">
-    {% for work in site.data.work %}
-    <div class="work--item">
-        <div class="work--image">
-            <img src="{{work.img}}" alt="Screenshot of outcome - {{work.name}}">
-        </div>
-        <div class="work--desc">
-          <h4>{{work.name}}</h4>
-          <small>{{work.type}}</small>
-          <p>{{work.desc}}</p>
-          {% if work.url %}<a class="btn" href="{{work.url}}" title="{{work.name}} site" target="_blank" rel="noopener">View the outcome</a>{%endif%}
-        </div>
-      </div>
-    {%endfor%}
+<section class="intro">
+  <div class="intro__content">
+    <h1>Patrick Whitehouse</h1>
+    <h2>Front end developer based in Tameside</h2>
   </div>
-</section>
-<section class="blog">
-  <h3>Blog posts</h3>
-  {% assign psize = site.posts | size %}
-  {% if psize == 0 %} 
-  <p>There are currently 0 blog posts. Check back soon as I'm in the process of writing some.</p>
-  {% else %}
-  <p>Have a read through my latest blog posts.</p>
-  <ul>
-      {% for post in site.posts %}
-      <li>
-        <h4>{{post.title}}</h4>
-        <small>{{post.date | date: '%d %B'}}</small>
-        <p>{{post.excerpt}}</p>
-        <a class="btn" href="{{post.url}}">Read the post</a>
-      </li>
-      {% endfor %}
-  </ul>
-  {% endif %}
-</section>
-<section class="instagram">
-  <h3>Instagram feed</h3>
-  <p>As I'm obsessed with cars and photography, check my latest photos! They're pulled from Instagram, so give me a cheeky follow!</p>
-  <div id="instafeed">
-    
-  </div>
-  <script type="text/javascript">
-    var feed = new Instafeed({
-        get: 'user',
-        userId: '399317996',
-        limit: '6',
-        sortBy: 'most-recent',
-        resolution: 'thumbnail',
-        accessToken: '399317996.e33646a.41b1aa38071b4e36a7596b0715aed127' ,
-        clientId: 'e33646a690f343518c566e61b7124f1f'
-      
-    });
-    feed.run();
-</script>
 </section>

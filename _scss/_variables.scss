@@ -1,21 +1,22 @@
-/* Colours */
+// Colors
 
-$secondary: #2d18bc;
-$lighter-secondary: lighten($secondary, 10%);
-$primary:#a6e9dc;
-$dark: #333;
-$light: #F8F8F8;
-/* Spacer */
+$orchid: #ffb2ea;
+$purple: #0c22b4; 
+$grey: #eee;
 
-$spacer1: 10px;
-$spacer2: 20px;
-$spacer3: 30px;
-/* Screen sizes */
 
-$tablet: 768px;
-$mobile: 480px;
-@mixin respond($media) {
-    @media(min-width: #{$media}) {
-        @content;
-    }
-}
+// Fonts
+
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,700');
+$font-sans: 'Roboto', sans-serif;
+
+$font-base: 16px;
+$font-l: 1.333rem;
+$font-xl: 2.4rem;
+
+
+// Spacing variables
+
+$indent__s: 5px;
+$indent__m: 10px;
+$indent__l: 15px;

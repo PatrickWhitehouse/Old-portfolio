@@ -1,0 +1,14 @@
+// Hero
+
+.intro{
+    height: 80vh;
+    background: $orchid;
+    color: $purple;
+    position: relative;
+    &__content{
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        left: $indent__l;
+    }
+}
