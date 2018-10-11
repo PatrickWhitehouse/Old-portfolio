@@ -1,9 +1,22 @@
+* {
+  box-sizing: border-box;
+}
 @import "variables";
 @import "typography";
 @import "home";
-
-.wrapper{
-    max-width: 960px;
-    margin: 0 auto;
-    padding: $indent__m;
+::selection {
+  background: $orchid;
+  color: $purple;
+}
+.wrapper {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: $indent__m;
+}
+footer {
+  text-align: center;
+  color: $orchid;
+  background: $purple;
+  padding: $indent__m;
+  margin-top: $indent__m;
 }

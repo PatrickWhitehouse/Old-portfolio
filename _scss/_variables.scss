@@ -1,22 +1,26 @@
 // Colors
 
 $orchid: #ffb2ea;
-$purple: #0c22b4; 
+$purple: #0c22b4;
 $grey: #eee;
-
 
 // Fonts
 
-@import url('https://fonts.googleapis.com/css?family=Roboto:400,700');
-$font-sans: 'Roboto', sans-serif;
+@import url("https://fonts.googleapis.com/css?family=Roboto:400,700");
+$font-sans: "Roboto", sans-serif;
 
 $font-base: 16px;
 $font-l: 1.333rem;
 $font-xl: 2.4rem;
-
 
 // Spacing variables
 
 $indent__s: 5px;
 $indent__m: 10px;
 $indent__l: 15px;
+
+// Screen sizes
+
+$screen__s: 640px;
+$screen__m: 768px;
+$screen__l: 960px;

@@ -3,6 +3,9 @@ layout: default
 title: Patrick Whitehouse - Front end developer based in Tameside
 description: The portfolio of Tameside based front end developer, Patrick Whitehouse. Explore his work and have a read of his blog posts.
 ---
+{% if site.hire-me %}
+<span class="hire-me"><span class="hire-me-circle"></span>I'm available for hire!</span>
+{% endif %}
 <section class="intro">
   <div class="intro__content">
     <h1>Patrick Whitehouse</h1>
@@ -13,19 +16,24 @@ description: The portfolio of Tameside based front end developer, Patrick Whiteh
   <div class="wrapper">
     <h3>About</h3>
     <p>Hello there! I'm Patrick Whitehouse, a front end developer based in Tameside, Manchester.</p>
-    <p>I've recently graduated from Manchester Metropolitan University with a First Class Honours in Web Development! I now work as a front end developer for <a href="https://pushon.co.uk" target="_blank">PushON</a>, who are located just outside Manchester city centre.</p>
+    <p>I've recently graduated from Manchester Metropolitan University with a First Class Honours in Web Development! I
+      now work as a front end developer for <a href="https://pushon.co.uk" target="_blank">PushON</a>, who are located
+      just outside Manchester city centre.</p>
   </div>
 </section>
 <section class="case-studies">
   <div class="wrapper">
     <h3>Case Studies</h3>
-    <p>Check out my latest bits of work. I'm always on the lookout for extra work so fire me a message if you need a website building!</p>
+    <p>Check out my latest bits of work. I'm always on the lookout for extra work so fire me a message if you need a
+      website building!</p>
     <div class="showcase">
+      {% for project in site.data.work %}
       <div class="project">
-        <span class="project__title">Project title</span>
-        <p class="project__excerpt">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium assumenda magni quae amet itaque in ipsum animi architecto autem, odio voluptatum repudiandae harum ratione doloremque nesciunt illo libero voluptate! Neque.</p>
-        <a href="#" class="project__link">Project Link</a>
+        <span class="project__title">{{project.name}}</span>
+        <p class="project__excerpt">{{project.desc}}</p>
+        <a href="{{project.url}}" class="project__link" target="_blank">Check out {{project.name}}</a>
       </div>
-    </div>
+      {% endfor %}
+    </div>    
   </div>
 </section>

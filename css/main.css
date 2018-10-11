@@ -1,4 +1,7 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto:400,700");
+* {
+  box-sizing: border-box; }
+
 body {
   font-family: "Roboto", sans-serif;
   font-size: 16px;
@@ -33,6 +36,66 @@ a:hover {
 a:focus {
   outline: 1px solid #0c22b4; }
 
+.hire-me {
+  position: absolute;
+  left: 10px;
+  -webkit-animation-name: move;
+          animation-name: move;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
+  color: green;
+  font-weight: 600; }
+  @media only screen and (max-width: 768px) {
+    .hire-me {
+      left: 50%;
+      -webkit-transform: translateX(-50%);
+              transform: translateX(-50%); } }
+
+.hire-me-circle {
+  display: inline-block;
+  margin-right: 5px;
+  width: 20px;
+  height: 20px;
+  background-color: green;
+  border-radius: 50%;
+  -webkit-animation-name: glow;
+          animation-name: glow;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
+  vertical-align: middle; }
+
+@-webkit-keyframes glow {
+  from {
+    box-shadow: 0px 0px 20px green; }
+  to {
+    box-shadow: 0px 0px 10px green; } }
+
+@keyframes glow {
+  from {
+    box-shadow: 0px 0px 20px green; }
+  to {
+    box-shadow: 0px 0px 10px green; } }
+
+@-webkit-keyframes move {
+  from {
+    top: 10px; }
+  to {
+    top: 25px; } }
+
+@keyframes move {
+  from {
+    top: 10px; }
+  to {
+    top: 25px; } }
+
 .intro {
   height: 80vh;
   background: #ffb2ea;
@@ -49,10 +112,12 @@ a:focus {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
-      flex-wrap: wrap; }
+      flex-wrap: wrap;
+  -ms-flex-pack: start;
+      justify-content: flex-start; }
 
 .project {
-  width: 50%;
+  width: 49%;
   -ms-flex-positive: 0;
       flex-grow: 0;
   background-color: #0c22b4;
@@ -74,8 +139,31 @@ a:focus {
       background-color: #ffb2ea;
       color: #0c22b4;
       border-color: #ffb2ea; }
+  .project:nth-of-type(odd) {
+    margin-right: 2%; }
+  @media only screen and (max-width: 768px) {
+    .project {
+      width: 100%;
+      margin-bottom: 10px; }
+      .project:nth-of-type(odd) {
+        margin-right: 0; } }
+
+::-moz-selection {
+  background: #ffb2ea;
+  color: #0c22b4; }
+
+::selection {
+  background: #ffb2ea;
+  color: #0c22b4; }
 
 .wrapper {
   max-width: 960px;
   margin: 0 auto;
   padding: 10px; }
+
+footer {
+  text-align: center;
+  color: #ffb2ea;
+  background: #0c22b4;
+  padding: 10px;
+  margin-top: 10px; }
