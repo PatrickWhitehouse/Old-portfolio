@@ -16,8 +16,8 @@
 .hire-me-circle {
   display: inline-block;
   margin-right: $indent__s;
-  width: 20px;
-  height: 20px;
+  width: 10px;
+  height: 10px;
   background-color: green;
   border-radius: 50%;
   animation-name: glow;
@@ -55,6 +55,9 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  @media only screen and (max-width: $screen__m){
+    height: 50vh;
+  }
 }
 
 // Work

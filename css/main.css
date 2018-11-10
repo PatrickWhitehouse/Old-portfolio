@@ -58,8 +58,8 @@ a:focus {
 .hire-me-circle {
   display: inline-block;
   margin-right: 5px;
-  width: 20px;
-  height: 20px;
+  width: 10px;
+  height: 10px;
   background-color: green;
   border-radius: 50%;
   -webkit-animation-name: glow;
@@ -107,6 +107,9 @@ a:focus {
       align-items: center;
   -ms-flex-pack: center;
       justify-content: center; }
+  @media only screen and (max-width: 768px) {
+    .intro {
+      height: 50vh; } }
 
 .showcase {
   display: -ms-flexbox;
