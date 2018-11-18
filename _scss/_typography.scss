@@ -32,6 +32,7 @@ a, a:link, a:visited, a:active{
     font-weight: bold;
     text-decoration: none;
     transition: ease all .25s;
+    overflow-wrap: break-word;
 }
 
 a:hover{
