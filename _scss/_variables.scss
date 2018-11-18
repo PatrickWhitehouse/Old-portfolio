@@ -7,14 +7,15 @@ $grey: #eee;
 // Fonts
 
 @font-face {
-    font-family: 'Apercu Pro';
-    src: url('../fonts/ApercuPro.woff2') format('woff2'),
-        url('../fonts/ApercuPro.woff') format('woff');
+    font-family: 'Proxima Nova';
+    src: url('../fonts/ProximaNova-Regular.woff2') format('woff2'),
+        url('../fonts/ProximaNova-Regular.woff') format('woff'),
+        url('../fonts/ProximaNova-Regular.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
 
-$font-sans: 'Apercu Pro';
+$font-sans: 'Proxima Nova', sans-serif;
 
 $font-base: 16px;
 $font-l: 1.333rem;

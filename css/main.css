@@ -2,13 +2,13 @@
   box-sizing: border-box; }
 
 @font-face {
-  font-family: 'Apercu Pro';
-  src: url("../fonts/ApercuPro.woff2") format("woff2"), url("../fonts/ApercuPro.woff") format("woff");
+  font-family: 'Proxima Nova';
+  src: url("../fonts/ProximaNova-Regular.woff2") format("woff2"), url("../fonts/ProximaNova-Regular.woff") format("woff"), url("../fonts/ProximaNova-Regular.ttf") format("truetype");
   font-weight: normal;
   font-style: normal; }
 
 body {
-  font-family: "Apercu Pro";
+  font-family: "Proxima Nova", sans-serif;
   font-size: 16px;
   line-height: 2;
   letter-spacing: .3px; }
@@ -59,7 +59,9 @@ a:focus {
     .hire-me {
       left: 50%;
       -webkit-transform: translateX(-50%);
-              transform: translateX(-50%); } }
+              transform: translateX(-50%);
+      -webkit-animation-name: none;
+              animation-name: none; } }
 
 .hire-me-circle {
   display: inline-block;
@@ -115,7 +117,8 @@ a:focus {
       justify-content: center; }
   @media only screen and (max-width: 768px) {
     .intro {
-      height: 50vh; } }
+      height: 75vh;
+      padding: 15px 0; } }
 
 .showcase {
   display: -ms-flexbox;
