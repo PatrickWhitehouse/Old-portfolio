@@ -6,8 +6,15 @@ $grey: #eee;
 
 // Fonts
 
-@import url("https://fonts.googleapis.com/css?family=Roboto:400,700");
-$font-sans: "Roboto", sans-serif;
+@font-face {
+    font-family: 'Apercu Pro';
+    src: url('../fonts/ApercuPro.woff2') format('woff2'),
+        url('../fonts/ApercuPro.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+$font-sans: 'Apercu Pro';
 
 $font-base: 16px;
 $font-l: 1.333rem;
