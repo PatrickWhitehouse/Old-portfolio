@@ -12,6 +12,10 @@ body {
   width: 100%;
   height: 100%; }
 
+img {
+  display: block;
+  max-width: 100%; }
+
 @font-face {
   font-family: 'Proxima Nova';
   src: url("../fonts/ProximaNova-Regular.woff2") format("woff2"), url("../fonts/ProximaNova-Regular.woff") format("woff"), url("../fonts/ProximaNova-Regular.ttf") format("truetype");
@@ -38,7 +42,8 @@ h3::after {
   display: block;
   height: 2px;
   background-color: #ffb2ea;
-  content: ""; }
+  content: "";
+  margin-bottom: 10px; }
 
 a, a:link, a:visited, a:active {
   color: #0c22b4;

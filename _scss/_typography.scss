@@ -24,6 +24,7 @@ h3::after{
     height: 2px;
     background-color: $orchid;
     content:"";
+    margin-bottom: $indent__m;
 }
 
 a, a:link, a:visited, a:active{
