@@ -36,7 +36,10 @@ img{
 .wrapper {
   max-width: 960px;
   margin: 0 auto;
-  padding: $indent__m;
+  padding: $indent__l;
+  @media only screen and (min-width: $screen__s){
+    padding: $indent__m;
+  }
 }
 
 footer {
