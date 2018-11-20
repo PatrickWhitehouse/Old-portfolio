@@ -14,14 +14,19 @@ body {
   height: 100%;
 }
 
+@import "variables";
+@import "typography";
+@import "home";
+
+p + p{
+  margin-top: $indent__m;
+}
+
 img{
   display: block;
   max-width: 100%;
 }
 
-@import "variables";
-@import "typography";
-@import "home";
 
 ::selection {
   background: $orchid;
