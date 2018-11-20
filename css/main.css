@@ -36,8 +36,7 @@ h3::after {
   display: block;
   height: 2px;
   background-color: #ffb2ea;
-  content: "";
-  margin-bottom: 10px; }
+  content: ""; }
 
 a, a:link, a:visited, a:active {
   color: #0c22b4;
@@ -171,8 +170,8 @@ a:focus {
       .project:nth-of-type(odd) {
         margin-right: 0; } }
 
-p + p {
-  margin-top: 10px; }
+p {
+  margin: 20px 0; }
 
 img {
   display: block;

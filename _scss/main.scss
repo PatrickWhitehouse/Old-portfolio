@@ -18,8 +18,8 @@ body {
 @import "typography";
 @import "home";
 
-p + p{
-  margin-top: $indent__m;
+p{
+  margin: 20px 0;
 }
 
 img{
