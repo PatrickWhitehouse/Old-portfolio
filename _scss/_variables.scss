@@ -6,16 +6,9 @@ $grey: #eee;
 
 // Fonts
 
-@font-face {
-    font-family: 'Proxima Nova';
-    src: url('../fonts/ProximaNova-Regular.woff2') format('woff2'),
-        url('../fonts/ProximaNova-Regular.woff') format('woff'),
-        url('../fonts/ProximaNova-Regular.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-}
+@import url('https://rsms.me/inter/inter-ui.css');
 
-$font-sans: 'Proxima Nova', sans-serif;
+$font-sans: 'Inter UI', sans-serif;
 
 $font-base: 16px;
 $font-l: 1.333rem;

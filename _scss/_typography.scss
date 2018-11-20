@@ -7,6 +7,10 @@ body{
     letter-spacing: .3px;
 }
 
+h1,h2,h3,h4,h5,h6{
+    font-weight: 600;
+}
+
 h1{
     font-size: $font-xl;
 }
@@ -29,7 +33,7 @@ h3::after{
 
 a, a:link, a:visited, a:active{
     color: $purple;
-    font-weight: bold;
+    font-weight: 600;
     text-decoration: none;
     transition: ease all .25s;
     overflow-wrap: break-word;

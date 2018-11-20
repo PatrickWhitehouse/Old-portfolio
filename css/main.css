@@ -1,3 +1,4 @@
+@import url("https://rsms.me/inter/inter-ui.css");
 * {
   box-sizing: border-box;
   margin: 0;
@@ -16,17 +17,14 @@ img {
   display: block;
   max-width: 100%; }
 
-@font-face {
-  font-family: 'Proxima Nova';
-  src: url("../fonts/ProximaNova-Regular.woff2") format("woff2"), url("../fonts/ProximaNova-Regular.woff") format("woff"), url("../fonts/ProximaNova-Regular.ttf") format("truetype");
-  font-weight: normal;
-  font-style: normal; }
-
 body {
-  font-family: "Proxima Nova", sans-serif;
+  font-family: "Inter UI", sans-serif;
   font-size: 16px;
   line-height: 2;
   letter-spacing: .3px; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 600; }
 
 h1 {
   font-size: 2.4rem; }
@@ -47,7 +45,7 @@ h3::after {
 
 a, a:link, a:visited, a:active {
   color: #0c22b4;
-  font-weight: bold;
+  font-weight: 600;
   text-decoration: none;
   transition: ease all .25s;
   overflow-wrap: break-word; }
@@ -155,7 +153,7 @@ a:focus {
   border-left: 5px solid #ffb2ea; }
   .project .project__title {
     color: #ffb2ea;
-    font-weight: bold; }
+    font-weight: 600; }
   .project a.project__link {
     display: block;
     border: 1px solid white;
