@@ -1,0 +1,9 @@
+a, a:link, a:visited, a:active{
+    color: $color-red;
+    border-bottom: 1px dotted $color-red;
+    text-decoration: none;
+}
+
+a:hover{
+    border-bottom: 0;
+}

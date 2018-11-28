@@ -1,3 +1,18 @@
+/*3rd party Imports*/
+@import url('https://rsms.me/inter/inter-ui.css');
+@import "../neat/neat";
+@import "normalize";
+
+/* Local Imports */
+@import "base/colours";
+@import "base/links";
+@import "components/nav";
+@import "layouts/homepage";
+
+
 body{
-    font-family: sans-serif;
+    font-family: 'Inter UI', sans-serif;
+    font-size: 16px;
+    letter-spacing: -0.005em;
+    padding: 25px;
 }
