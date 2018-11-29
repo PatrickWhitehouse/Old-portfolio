@@ -1,0 +1,11 @@
+.projects{
+    @include grid-container;
+}
+
+.project{
+    position: relative;
+    @include grid-column(4);
+    @include grid-media($tablet-grid){
+        @include grid-column(5);
+    }
+}

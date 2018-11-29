@@ -1,11 +1,16 @@
 nav{
+    @include grid-container;
     text-align: right;
     ul{
-        padding:0;
+        @include grid-column;
+        padding: 20px 0;
         li{
             list-style: none;
             display: inline-block;
             padding-left: 15px;
         }
+    }
+    @include grid-media($tablet-grid){
+        text-align: center;
     }
 }

@@ -5,4 +5,6 @@ kramdown:
 highlighter: rouge
 exclude: ["node_modules", "gulpfile.js", "package.json"]
 url: //patrickwhitehouse.github.io
-permalink: /blog/:title:output_ext
+permalink: /:title/
+social:
+  twitter: https://twitter.com/patrickdoesweb

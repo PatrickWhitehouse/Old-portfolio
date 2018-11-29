@@ -1,3 +1,24 @@
-.homescreen{
+.home{
     text-align: center;
+    padding-top: 10px;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: $color-black;
+    color: white;
+}
+
+.about{
+    @include grid-container;
+    &-info, &-image{
+        @include grid-column(6);
+        @include grid-media($tablet-grid){
+            @include grid-column;
+        }
+    }
+    &-image{
+        text-align: center;
+    }
 }
