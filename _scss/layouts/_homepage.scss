@@ -1,4 +1,4 @@
-.home{
+.page-intro{
     text-align: center;
     padding-top: 10px;
     height: 400px;
@@ -18,7 +18,15 @@
             @include grid-column;
         }
     }
-    &-image{
-        text-align: center;
+    &-general{
+        @include grid-column;
+    }
+}
+
+.tech-stack{
+    li{
+        list-style: circle;
+        color: $color-red;
+        list-style-position: inside;
     }
 }

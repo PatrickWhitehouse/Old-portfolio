@@ -1,5 +1,7 @@
 <footer>
     <ul>
-        <li><a href="{{site.social.twitter}}">Twitter</a></li>
+        {% for item in site.social %}
+        <li><a href="{{item.link}}" target="_blank">{{item.platform}}</a></li>
+        {% endfor %}
     </ul>
 </footer>

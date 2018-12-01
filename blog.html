@@ -1,0 +1,18 @@
+---
+layout: default
+title: Blog
+---
+<section class="page-intro">
+        <h1>Blog</h1>
+        <h2>Read my latest stories and rambles 📝</h2>
+</section>
+<section class="blog">
+    <div class="wrapper">
+            <h3>Latest posts</h3>
+            <p>My posts tend to be about the web, cars, technology and lifes rambles.</p>
+            {% assign psize = site.posts | size %}
+            {% if psize == 0 %}
+            <span>Sorry, I've not added any posts yet! Check back soon.</span>
+            {% endif %}
+    </div>
+</section>

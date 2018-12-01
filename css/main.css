@@ -333,6 +333,17 @@ nav {
     nav {
       text-align: center; } }
 
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #130e1b;
+  margin-top: 20px; }
+  footer li {
+    display: inline-block; }
+    footer li a, footer li a:link, footer li a:visited, footer li a:active {
+      color: white;
+      border-color: white; }
+
 .projects::after {
   clear: both;
   content: "";
@@ -348,8 +359,10 @@ nav {
       width: calc(50% - 22.5px);
       float: left;
       margin-left: 15px; } }
+  .project a {
+    border-style: none; }
 
-.home {
+.page-intro {
   text-align: center;
   padding-top: 10px;
   height: 400px;
@@ -379,8 +392,15 @@ nav {
       float: left;
       margin-left: 15px; } }
 
-.about-image {
-  text-align: center; }
+.about-general {
+  width: calc(100% - 40px);
+  float: left;
+  margin-left: 20px; }
+
+.tech-stack li {
+  list-style: circle;
+  color: #fa0501;
+  list-style-position: inside; }
 
 * {
   box-sizing: border-box; }

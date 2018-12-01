@@ -8,4 +8,7 @@
     @include grid-media($tablet-grid){
         @include grid-column(5);
     }
+    a{
+        border-style: none;
+    }
 }

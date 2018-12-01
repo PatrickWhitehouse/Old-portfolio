@@ -1,27 +1,25 @@
 ---
 layout: default
-title: Projects
+title: Case Studies
 ---
+<section class="page-intro">
+        <h1>Case Studies</h1>
+        <h2>Have a look at my latest side projects 😄</h2>
+</section>
 <section class="projects">
+        {% for project in site.projects %}
         <div class="project">
             <div class="project-info">
-                    <img src="https://placehold.it/600x450" alt="">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos optio reprehenderit vel deleniti earum tenetur perferendis vitae veniam laboriosam explicabo odit, saepe nisi asperiores ex libero alias illo provident aliquid.</p>
+                <a href="{{project.link}}" target="_blank">
+                                {% if project.image == false %}
+                                <img src="https://placehold.it/600x450" alt="">
+                                {% else %}
+                                <img src="{{project.image}}" alt="">
+                                {% endif %}
+                                <h3>{{project.title}}</h3>
+                </a>
+                <p>{{project.content}}</p>
             </div>
-            <h3>Project title</h3>
         </div>
-        <div class="project">
-                <div class="project-info">
-                        <img src="https://placehold.it/600x450" alt="">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos optio reprehenderit vel deleniti earum tenetur perferendis vitae veniam laboriosam explicabo odit, saepe nisi asperiores ex libero alias illo provident aliquid.</p>
-                </div>
-                <h3>Project title</h3>
-            </div>
-            <div class="project">
-                    <div class="project-info">
-                            <img src="https://placehold.it/600x450" alt="">
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos optio reprehenderit vel deleniti earum tenetur perferendis vitae veniam laboriosam explicabo odit, saepe nisi asperiores ex libero alias illo provident aliquid.</p>
-                    </div>
-                    <h3>Project title</h3>
-                </div>
+        {% endfor %}
     </section>

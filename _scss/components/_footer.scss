@@ -1,0 +1,13 @@
+footer{
+    text-align: center;
+    padding: 20px;
+    background-color: $color-black;
+    margin-top: 20px;
+    li{
+        display: inline-block;
+        a,a:link, a:visited, a:active{
+            color: white;
+            border-color: white;
+        }
+    }
+}
