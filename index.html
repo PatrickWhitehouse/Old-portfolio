@@ -35,6 +35,23 @@
             font-size: calc(16px + .5vw);
         }
 
+        a, a:link, a:visited, a:active{
+            color: white;
+            font-weight: bold;
+            text-decoration: none;
+            transition: ease-in-out background-size .3s;
+            background-image: linear-gradient(transparent calc(100% - 3px), lavender 3px);
+            background-size: 0% 100%;
+            background-repeat: no-repeat;
+        }
+        a:focus{
+            background-color: rgba(255,255,255, .35);
+        }
+        a:hover{
+            background-size: 100% 100%;
+            transition: ease-in-out background-size .3s;
+        }
+
     </style>
 </head>
 <body>
