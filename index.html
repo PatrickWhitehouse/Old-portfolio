@@ -1,66 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <title>Patrick Whitehouse</title>
-    <style>
-        *{
-            box-sizing: border-box;
-        }
-        html{
-            font-size: 16px;
-        }
-        body{
-            font-family: sans-serif;
-            color: white;
-            background-color: #16161D;
-            line-height: 1.6;
-        }
-        main {
-            max-width: 38rem;
-            padding: 2rem;
-            margin: auto;
-            text-align: center;
-        }
-
-        h1{
-            font-size: calc(16px + 2vw);        
-        }
-
-        h2{
-            font-size: calc(16px + 1.5vw);       
-        }
-        p{
-            font-size: calc(16px + .5vw);
-        }
-
-        a, a:link, a:visited, a:active{
-            color: white;
-            font-weight: bold;
-            text-decoration: none;
-            transition: ease-in-out background-size .3s;
-            background-image: linear-gradient(transparent calc(100% - 3px), lavender 3px);
-            background-size: 0% 100%;
-            background-repeat: no-repeat;
-        }
-        a:focus{
-            background-color: rgba(255,255,255, .35);
-        }
-        a:hover{
-            background-size: 100% 100%;
-            transition: ease-in-out background-size .3s;
-        }
-
-    </style>
+    <link rel="stylesheet" href="css/styles.css">
 </head>
+
 <body>
-    <main>
-        <h1>Patrick Whitehouse 🤙🏻</h1>
-        <h2>Front end developer based in Manchester</h2>
-        <p>I'm currently revamping my site. Check back soon and i'm sure it'll be ready. In the meantime, check my <a href="https://twitter.com/patrickdoesweb" target="_blank">Twitter</a>.</p>
-    </main>
+    <section class="intro">
+        <div class="wrapper">
+            <div>
+                <img src="img/me-and-beth.jpg" alt="Patrick and his girlfriend, Beth">
+            </div>
+            <div>
+                <h1>Patrick Whitehouse</h1>
+                <h2>Front end developer based in Tameside, Manchester</h2>
+            </div>
+        </div>
+    </section>
 </body>
+
 </html>
