@@ -11,16 +11,6 @@ const cleanCSS = require('gulp-clean-css');
 const rename = require("gulp-rename");
 const browserSync = require('browser-sync').create();
 
-
-/* Default task 
-
-1) Run browser sync task. This watches sass files and runs the sass task once they are changed.
-
-
-*/
-
-
-
 /* Convert sass to css */
 
 function convert(done) {
